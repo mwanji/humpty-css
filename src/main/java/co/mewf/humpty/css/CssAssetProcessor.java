@@ -30,5 +30,4 @@ public class CssAssetProcessor implements AssetProcessor {
   public void configure(WebJarAssetLocator locator) {
     urlRewriter = new CssUrlRewriter(locator);
   }
-
 }
