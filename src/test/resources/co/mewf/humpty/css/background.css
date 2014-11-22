@@ -1,0 +1,9 @@
+.select2-container .select2-choice abbr {
+    display: none;
+    background: url('select2.png') right top no-repeat;
+    outline: 0;
+}
+
+.select2-search input.select2-active {
+    background: #fff url('select2-spinner.gif') no-repeat 100%;
+}
