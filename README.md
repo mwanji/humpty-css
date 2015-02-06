@@ -1,5 +1,7 @@
 # humpty-css
 
+Provides minification and URL rewriting for CSS files in the humpty pipeline.
+
 ## Installation
 
 In Maven:
@@ -28,6 +30,10 @@ src:url('/webjars/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.eot');
 
 The latter can be served directly by a [Servlet 3.0 container](http://alexismp.wordpress.com/2010/04/28/web-inflib-jarmeta-infresources/).
 
+## Compression
+
+Uses an inline version of [YUI Compressor](http://yui.github.io/yuicompressor/) to avoid dragging in YUI Compressor's JavaScript-related dependencies.
+
 ## Configuration
 
 ### Name
@@ -36,9 +42,14 @@ css
 
 ### Options
 
-### In humpty.toml
+Option|Default|Description
+------|-------|-----------
+minify|only in production mode|Set to true or false to force minification to be always on or off, respectively
+rewrite|true|Set to false to disable URL rewriting
+
+### Example
 
 ````toml
 [options.css]
-ignore = ["webjar1", "webjar2"] # array of webjar
+minify = true
 ````

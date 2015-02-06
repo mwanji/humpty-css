@@ -26,6 +26,7 @@ public class CssUrlRewriter {
     CascadingStyleSheet styleSheet = CSSReader.readFromString(css, ECSSVersion.CSS30);
     CSSWriterSettings settings = new CSSWriterSettings(ECSSVersion.CSS30);
     settings.setQuoteURLs(true);
+    settings.setOptimizedOutput(false);
     CSSWriter writer = new CSSWriter(settings);
     writer.setWriteHeaderText(false);
     writer.setWriteFooterText(false);

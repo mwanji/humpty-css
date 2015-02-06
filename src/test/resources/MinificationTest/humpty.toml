@@ -1,0 +1,8 @@
+bundle.css = ["humpty-css.css"]
+preminified.css = ["/bootstrap.min.css"]
+
+[options]
+  assetsDir = "src/test/resources/MinificationTest"
+
+[options.css]
+  rewrite = false

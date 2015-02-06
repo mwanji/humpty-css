@@ -28,5 +28,11 @@
       <groupId>co.mewf.humpty</groupId>
       <artifactId>humpty</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.7.10</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>
