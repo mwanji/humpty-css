@@ -51,5 +51,5 @@ rewrite|true|Set to false to disable URL rewriting
 
 ````toml
 [options.css]
-minify = true
+  minify = true
 ````
