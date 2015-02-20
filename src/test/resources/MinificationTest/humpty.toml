@@ -1,5 +1,5 @@
-bundle.css = ["humpty-css.css"]
-preminified.css = ["/bootstrap.min.css"]
+"bundle.css" = ["humpty-css.css"]
+"preminified.css" = ["/bootstrap.min.css"]
 
 [options]
   assetsDir = "src/test/resources/MinificationTest"
