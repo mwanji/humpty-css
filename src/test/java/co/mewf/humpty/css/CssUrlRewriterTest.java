@@ -16,25 +16,25 @@ import co.mewf.humpty.config.HumptyBootstrap;
 public class CssUrlRewriterTest {
 
   private final Path resourcesDir = Paths.get("src", "test", "resources", "CssUrlRewriterTest");
-  private final Pipeline pipeline = new HumptyBootstrap(Configuration.load(resourcesDir.resolve("humpty.toml"))).createPipeline();
+  private final Pipeline pipeline = new HumptyBootstrap(Configuration.load("CssUrlRewriterTest/humpty.toml")).createPipeline();
   
   @Test
   public void should_change_font_urls_to_servlet3_resource_path() throws Exception {
-    String asset = pipeline.process("bundle.css//fonts.css").getAsset();
+    String asset = pipeline.process("bundle.css/fonts.css").getAsset();
     
     assertEquals(read("fonts_rewritten.css").trim(), asset.trim());
   }
   
   @Test
   public void should_change_background_url_to_servlet3_resource_path() throws Exception {
-    String asset = pipeline.process("bundle.css//background.css").getAsset();
+    String asset = pipeline.process("bundle.css/background.css").getAsset();
     
     assertEquals(read("background_rewritten.css").trim(), asset.trim());
   }
   
   @Test
   public void should_change_background_image_url_to_servlet3_resource_path() throws Exception {
-    String asset = pipeline.process("bundle.css//background-image.css").getAsset();
+    String asset = pipeline.process("bundle.css/background-image.css").getAsset();
     
     assertEquals(read("background-image_rewritten.css").trim(), asset.trim());
   }

@@ -22,7 +22,7 @@ public class MinificationTest {
   public void should_minify_in_production_mode() throws Exception {
     String asset = pipeline.process("bundle.css").getAsset();
     
-    assertEquals(read("humpty-css.min.css"), asset);
+    assertEquals(read("humpty-css.min.css").trim(), asset.trim());
   }
   
   @Test

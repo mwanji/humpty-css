@@ -1,7 +1,7 @@
-"bundle.css" = ["/fonts.css", "/background.css", "/background-image.css"]
+"bundle.css" = ["fonts.css", "background.css", "background-image.css"]
 
 [options]
-  assetsDir = "src/test/resources/CssUrlRewriterTest"
+  assetsDir = "CssUrlRewriterTest"
 
 [options.css]
   minify = false
