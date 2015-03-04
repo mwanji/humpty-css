@@ -4,7 +4,7 @@
   <parent>
     <groupId>co.mewf.humpty</groupId>
     <artifactId>humpty-parent</artifactId>
-    <version>0.7.0</version>
+    <version>0.9.0</version>
   </parent>
   <artifactId>humpty-css</artifactId>
   <version>1.0.0-SNAPSHOT</version>
@@ -19,10 +19,6 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>webjars-locator</artifactId>
     </dependency>
     <dependency>
       <groupId>co.mewf.humpty</groupId>
