@@ -4,7 +4,7 @@
   <parent>
     <groupId>co.mewf.humpty</groupId>
     <artifactId>humpty-parent</artifactId>
-    <version>0.10.0</version>
+    <version>0.11.0</version>
   </parent>
   <artifactId>humpty-css</artifactId>
   <version>1.0.0-SNAPSHOT</version>
@@ -31,4 +31,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <scm>
+    <connection>${github.repo}/${project.artifactId}.git</connection>
+    <developerConnection>${github.repo}/${project.artifactId}.git</developerConnection>
+    <url>${github.url}/${project.artifactId}</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>Github Issues</system>
+    <url>${github.url}/${project.artifactId}/issues</url>
+  </issueManagement>
 </project>
