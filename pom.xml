@@ -6,7 +6,7 @@
     <version>0.11.0</version>
   </parent>
   <artifactId>humpty-css</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0-SNAPSHOT</version>
   <name>humpty-css</name>
 
   <dependencies>
@@ -34,7 +34,7 @@
     <connection>${github.repo}/${project.artifactId}.git</connection>
     <developerConnection>${github.repo}/${project.artifactId}.git</developerConnection>
     <url>${github.url}/${project.artifactId}</url>
-    <tag>humpty-css-0.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>Github Issues</system>
